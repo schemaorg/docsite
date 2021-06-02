@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>{{ page.title }} - Docs - Schema.org</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Static Doc Insert Head -->
+<meta name="viewport" content="width=device-width, initial-scale=1, , shrink-to-fit=no">
+<meta name="description" content="Schema.org is a set of extensible schemas that enables webmasters to embed
+structured data on their web pages for use by search engines and other applications." />
+<link rel="shortcut icon" type="image/png" href="https://schema.org/docs/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="https://schema.org/docs/schemaorg.css" />
+
+<!-- Static Doc Insert Head end -->
+
+<!--<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@600&family=Roboto&display=swap" rel="stylesheet">-->
+  <link href="/assets/css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+<body>
+  <div id="main">
+<!-- Static Doc Insert PageHead -->
+
+<div id="container">
+  <div id="headerwrap">
+    <div id="pagehead1" class="mobnav">
+      <div class="header-block" id="pagehead-left">
+        <div id="sitename2">
+          <a href="/">Schema.org</a>
+        </div>
+        <div id="navicon2">
+          <a href="javascript:void(0);" class="icon" onclick="navFunction()"><img height="40" alt="menu" src="https://schema.org/docs/menu-bar-icon-white.png"></a>
+        </div>
+      </div>
+      <div  class="header-block header-block-right mobnav" id="pagehead-mid">
+        <div id="selectionbar2">
+          <ul>
+            <li>
+              <a href="/docs/documents.html">Documentation</a>
+            </li>
+            <li>
+              <a href="/docs/schemas.html">Schemas</a>
+            </li>
+            <li>
+              <a href="/docs/about.html">About</a>
+            </li>
+          <!--
+             <li>
+              <a href="/">Home</a>
+            </li>
+          -->
+          </ul>
+        </div> <!-- selectionbar -->
+      </div>
+      <div  class="header-block header-block-right mobnav" id="pagehead-right">
+        <div id="cse-search-form2">
+            <div class="gcse-searchbox-only" data-resultsUrl="/docs/search_results.html"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="devnote"><b>Note</b>: you are viewing the development
+    version of <a href="https://schema.org">Schema.org</a>.
+    See <a href="/docs/howwework.html">How we work</a> for more details.
+  </div>
+</div>
+  
+ 
+    <main id="{{ main_id }}" class="container-fluid">
+      <div class="row">
+        <div id="main-side-nav" class="col-3">
+          {% include sidebar.html %}
+        </div>
+        <div class="col-9">
+          <div id="main-doc-content">
+            {% unless page.url == "/" %}
+              {% if page.parent %}
+                <nav aria-label="Breadcrumb" id="main-breadcrumb">
+                  <ol class="breadcrumb">
+                    {% if page.grand_parent %}
+                      <li class="breadcrumb-item"><a href="{{ first_level_url }}">{{ page.grand_parent }}</a></li>
+                      <li class="breadcrumb-item"><a href="{{ second_level_url }}">{{ page.parent }}</a></li>
+                    {% else %}
+                      <li class="breadcrumb-item"><a href="{{ first_level_url }}">{{ page.parent }}</a></li>
+                    {% endif %}
+                    <li class="breadcrumb-item active"><span>{{ page.title }}</span></li>
+                  </ol>
+                </nav>
+              {% endif %}
+            {% endunless %}
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="main-footer">
+      <div class="container">
+        <div class="row">
+          <div id="sub-footer" class="col-12">
+            <span><a href="https://datacommons.org">Data Commons</a> is a Google supported project</span>
+            <div class="float-md-right mt-2 mt-md-0">
+              <a href="https://policies.google.com/terms">Terms and Conditions</a> ·
+              <a href="https://policies.google.com/privacy?hl=en-US">Privacy Policy</a> ·
+              <a href="https://datacommons.org/disclaimers">Disclaimers</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script async
+    src="https://cse.google.com/cse.js?cx=010079880385165835740%3Aosnv3q-sw08"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117119267-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-117119267-1');
+  </script>
+  <script src="/assets/js/tabs.js"></script>
+</body>
+</html>

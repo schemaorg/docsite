@@ -1,0 +1,11 @@
+### Mac OS ###
+**/.DS_Store
+.AppleDouble
+.LSOverride
+
+.sass-cache/
+_site/
+vendor/
+.bundle/
+.vscode/
+.jekyll-cache

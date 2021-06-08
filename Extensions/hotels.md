@@ -15,13 +15,13 @@ See also: [acknowledgements](#acks)
 
 When modeling hotel-related information in Web content with schema.org, there are three core objects:
 
-*   A **[lodging business](../LodgingBusiness)**, e.g. a hotel, hostel, resort, or a camping site): essentially the place and local business that houses the actual units of the establishment (e.g. hotel rooms). The lodging business can encompass multiple buildings but is in most cases a coherent place.
-*   An **[accommodation](../Accommodation)**, i.e. the actually relevant units of the establishment (e.g. hotel rooms, suites, apartments, meeting rooms, camping pitches, etc.). These are the actual objects that are offered for rental.
-*   An **[offer](../Offer)** to let a hotel room (or other forms of accommodations) for a particular amount of money and for a given type of usage (e.g. occupancy), typically further constrained by advance booking requirements and other terms and conditions.
+*   A **[lodging business](https://schema.org/LodgingBusiness)**, e.g. a hotel, hostel, resort, or a camping site): essentially the place and local business that houses the actual units of the establishment (e.g. hotel rooms). The lodging business can encompass multiple buildings but is in most cases a coherent place.
+*   An **[accommodation](https://schema.org/Accommodation)**, i.e. the actually relevant units of the establishment (e.g. hotel rooms, suites, apartments, meeting rooms, camping pitches, etc.). These are the actual objects that are offered for rental.
+*   An **[offer](https://schema.org/Offer)** to let a hotel room (or other forms of accommodations) for a particular amount of money and for a given type of usage (e.g. occupancy), typically further constrained by advance booking requirements and other terms and conditions.
 
-In schema.org, an offer for a hotel room is using the same patterns as an offer for any other type of product or service, e.g. a TV set or a welding service. However, a hotel room is not a subclass of [Product](../Product) or [Service](../Service). To enable an offer to be described, use is made of the Multi-Typed Entity (MTE) feature of Schema.org.
+In schema.org, an offer for a hotel room is using the same patterns as an offer for any other type of product or service, e.g. a TV set or a welding service. However, a hotel room is not a subclass of [Product](https://schema.org/Product) or [Service](https://schema.org/Service). To enable an offer to be described, use is made of the Multi-Typed Entity (MTE) feature of Schema.org.
 
-When defining an instance of an [Accommodation](../Accommodation), that is offered by a [LodgingBusiness](../LodgingBusiness), it is described as being both the appropriate Type for the accomodation _and_ a [Product](../Product). Thus for example a [Hotel](../Hotel) will make an [Offer](../Offer), or offers, for a [HotelRoom](../HotelRoom), that is also identified as a [Product](../Product). Prices and terms and conditions are thus not properties of the hotel or hotel room, but of the offer for a certain room or room category.
+When defining an instance of an [Accommodation](https://schema.org/Accommodation), that is offered by a [LodgingBusiness](https://schema.org/LodgingBusiness), it is described as being both the appropriate Type for the accomodation _and_ a [Product](https://schema.org/Product). Thus for example a [Hotel](https://schema.org/Hotel) will make an [Offer](https://schema.org/Offer), or offers, for a [HotelRoom](https://schema.org/HotelRoom), that is also identified as a [Product](https://schema.org/Product). Prices and terms and conditions are thus not properties of the hotel or hotel room, but of the offer for a certain room or room category.
 
 The markup for MTE's is very simple:
 
@@ -38,47 +38,47 @@ The markup for MTE's is very simple:
     ```"@context": "https://schema.org/",
     "@type": ["HotelRoom","Product"],```
 
-In the case of rental accommodations, it is important to attach the [businessFunction](../businessFunction) property with the value [LeaseOut](http://purl.org/goodrelations/v1#LeaseOut) to the [offer](../Offer), unless you want to sell the property. This allows reusing and extending the same types for dwellings for real estate offers in schema.org.
+In the case of rental accommodations, it is important to attach the [businessFunction](https://schema.org/businessFunction) property with the value [LeaseOut](http://purl.org/goodrelations/v1#LeaseOut) to the [offer](https://schema.org/Offer), unless you want to sell the property. This allows reusing and extending the same types for dwellings for real estate offers in schema.org.
 
 ### Basic Model
 
 The diagram shown below illustrates the basic pattern for describing hotel room offers and offers for other forms of accommodations.
 
-All accommodation Types are subclasses of [https://schema.org/Place](../Place). To use them as the subject of an offer, you should use the MTE technique of assigining your instances to be both an Accomodation subclass and a Product. All types of lodging businesses are subclasses of [https://schema.org/LocalBusiness](../LocalBusiness) which itself is a subclass of [https://schema.org/Place](../Place) and [https://schema.org/Organization](../Organization).
+All accommodation Types are subclasses of [https://schema.org/Place](https://schema.org/Place). To use them as the subject of an offer, you should use the MTE technique of assigining your instances to be both an Accomodation subclass and a Product. All types of lodging businesses are subclasses of [https://schema.org/LocalBusiness](https://schema.org/LocalBusiness) which itself is a subclass of [https://schema.org/Place](https://schema.org/Place) and [https://schema.org/Organization](https://schema.org/Organization).
 
-The relationship between an accommodation and the local business it belongs to is represented via the [containedInPlace](../containedInPlace) (from hotel room to hotel) or [containsPlace](../containsPlace) (from hotel to hotel room) properties. The relationship between the offer and the room included in the offer can be represented via either the [offers](../offers) property (from the room product to the offer) or via [itemsOffered](../itemOffered) (from the offer to the room).
+The relationship between an accommodation and the local business it belongs to is represented via the [containedInPlace](https://schema.org/containedInPlace) (from hotel room to hotel) or [containsPlace](https://schema.org/containsPlace) (from hotel to hotel room) properties. The relationship between the offer and the room included in the offer can be represented via either the [offers](https://schema.org/offers) property (from the room product to the offer) or via [itemsOffered](https://schema.org/itemOffered) (from the offer to the room).
 
-The relationship between the lodging business and its offers for rooms is represented via the [makesOffer](../makesOffer) property (from the hotel to the offer) or via the [offeredBy](../offeredBy) property (from the offer to the hotel).
+The relationship between the lodging business and its offers for rooms is represented via the [makesOffer](https://schema.org/makesOffer) property (from the hotel to the offer) or via the [offeredBy](https://schema.org/offeredBy) property (from the offer to the hotel).
 
-When the offer includes more than just the bare room (e.g. meals) or multiple nights we use the [includesObject](../includesObject) property and one or more [TypeAndQuantityNode](../TypeAndQuantityNode) nodes. 
+When the offer includes more than just the bare room (e.g. meals) or multiple nights we use the [includesObject](https://schema.org/includesObject) property and one or more [TypeAndQuantityNode](https://schema.org/TypeAndQuantityNode) nodes. 
 <img alt="Schema.org pattern for describing hotel room offers" width="960" border="0" src="schema_hotels_1.png" title="Schema.org pattern for describing hotel room offers" />
 
 ### Types of Lodging Businesses
 
 Currently, there are explicit types for the following kinds of lodging businesses:
 
-*   [BedAndBreakfast](../BedAndBreakfast)
-*   [Campground](../Campground)
-*   [Hostel](../Hostel)
-*   [Hotel](../Hotel)
-*   [Motel](../Motel)
-*   [Resort](../Resort)
+*   [BedAndBreakfast](https://schema.org/BedAndBreakfast)
+*   [Campground](https://schema.org/Campground)
+*   [Hostel](https://schema.org/Hostel)
+*   [Hotel](https://schema.org/Hotel)
+*   [Motel](https://schema.org/Motel)
+*   [Resort](https://schema.org/Resort)
 
-This list might be extended in the future. For other forms, the generic type [LodgingBusiness](../LodgingBusiness) can be used. The property [additionalType](../additionalType) allows using external identifiers for indicating the exact type in such cases.
+This list might be extended in the future. For other forms, the generic type [LodgingBusiness](https://schema.org/LodgingBusiness) can be used. The property [additionalType](https://schema.org/additionalType) allows using external identifiers for indicating the exact type in such cases.
 
 ### Types of Accommodations
 
 For kinds of accommodations, the following types more specific types are available:
 
-*   [Apartment](../Apartment)
-*   [CampingPitch](../CampingPitch)
-*   [Room](../Room)
-    *   [HotelRoom](../HotelRoom)
-    *   [MeetingRoom](../MeetingRoom)
-*   [House](../House)
-*   [Suite](../Suite)
+*   [Apartment](https://schema.org/Apartment)
+*   [CampingPitch](https://schema.org/CampingPitch)
+*   [Room](https://schema.org/Room)
+    *   [HotelRoom](https://schema.org/HotelRoom)
+    *   [MeetingRoom](https://schema.org/MeetingRoom)
+*   [House](https://schema.org/House)
+*   [Suite](https://schema.org/Suite)
 
-This list might be extended in the future. For other forms, the generic type [Accommodation](../Accommodation) can be used. The property [additionalType](../additionalType) allows using external identifiers for indicating the exact type in such cases.
+This list might be extended in the future. For other forms, the generic type [Accommodation](https://schema.org/Accommodation) can be used. The property [additionalType](https://schema.org/additionalType) allows using external identifiers for indicating the exact type in such cases.
 
 ## Minimal Example
 
@@ -106,9 +106,9 @@ enjoying your morning coffee.</span>
 </div>
 ```
 
-See the page for [https://schema.org/Hotel](../Hotel) for a complete list of additional properties for describing the hotel. Popular properties are also explained in more detail below.
+See the page for [https://schema.org/Hotel](https://schema.org/Hotel) for a complete list of additional properties for describing the hotel. Popular properties are also explained in more detail below.
 
-**Note:** In the following, we focus on hotel-related examples, but the basic patterns for other types of lodging businesses are the same. Simply use the more specific types (e.g. [Campground](../Campground) or [MeetingRoom](/MeetingRoom)).
+**Note:** In the following, we focus on hotel-related examples, but the basic patterns for other types of lodging businesses are the same. Simply use the more specific types (e.g. [Campground](https://schema.org/Campground) or [MeetingRoom](https://schema.org/MeetingRoom)).
 
 ## Information about the Hotel
 
@@ -174,7 +174,7 @@ enjoying your morning coffee.</span>
 
 #### Advanced: Type of Star Rating
 
-If available, it makes sense to specify the origin of the star rating, e.g. the name of the awarding institution. In this case, use a [rating](../Rating) and its [author](../author) property for indicating the party making the rating assessment (e.g. HOTREC, DEHOGA, WHR, or Hotelstars).
+If available, it makes sense to specify the origin of the star rating, e.g. the name of the awarding institution. In this case, use a [rating](https://schema.org/Rating) and its [author](https://schema.org/author) property for indicating the party making the rating assessment (e.g. HOTREC, DEHOGA, WHR, or Hotelstars).
 
 **Example:** 4-star hotel rated by the DEHOGA
 
@@ -222,7 +222,7 @@ enjoying your morning coffee.</span>
 
 ### Opening Hours (Reception)
 
-You can use the [openingHours](../openingHours) or [openingHoursSpecification](../openingHoursSpecification) properties to indicate the opening hours of the reception of the hotel.
+You can use the [openingHours](https://schema.org/openingHours) or [openingHoursSpecification](https://schema.org/openingHoursSpecification) properties to indicate the opening hours of the reception of the hotel.
 
 ```
 <div itemscope itemtype="https://schema.org/Hotel">
@@ -239,9 +239,9 @@ enjoying your morning coffee.</span>
 
 ### Reviews and Ratings
 
-You can attach individual (customer) reviews and aggregate ratings using [review](../review) / [Review](../Review) and aggregate ratings using [aggregateRating](/aggregateRating) / [AggregateRating](/AggregateRating).
+You can attach individual (customer) reviews and aggregate ratings using [review](https://schema.org/review) / [Review](https://schema.org/Review) and aggregate ratings using [aggregateRating](https://schema.org/aggregateRating) / [AggregateRating](https://schema.org/AggregateRating).
 
-**Note:** Official hotel star ratings are not reviews but should use the [starRating](/starRating) property.
+**Note:** Official hotel star ratings are not reviews but should use the [starRating](https://schema.org/starRating) property.
 
 ### Number of Rooms
 
@@ -278,7 +278,7 @@ enjoying your morning coffee.</span>
 
 ### Renovation and Date of Establishment
 
-For the date of establishment, use [foundingDate](../foundingDate). For information about renovation activities, use [additionalProperty](../additionalProperty) and put the year into its [value](../value) property and details into its description.
+For the date of establishment, use [foundingDate](https://schema.org/foundingDate). For information about renovation activities, use [additionalProperty](https://schema.org/additionalProperty) and put the year into its [value](https://schema.org/value) property and details into its description.
 
 ```
 <div itemscope itemtype="https://schema.org/Hotel">
@@ -300,7 +300,7 @@ enjoying your morning coffee.</span>
 
 ### Membership in Organizations
 
-Use [memberOf](../memberOf) to link to noteworthy organizations.
+Use [memberOf](https://schema.org/memberOf) to link to noteworthy organizations.
 
 ```
 <div itemscope itemtype="https://schema.org/Hotel">
@@ -316,7 +316,7 @@ enjoying your morning coffee.</span>
 
 ### Hotels Chains
 
-Use [parentOrganization](../parentOrganization) to link a chain hotel to the operating company.
+Use [parentOrganization](https://schema.org/parentOrganization) to link a chain hotel to the operating company.
 
 ```
 <div itemscope itemtype="https://schema.org/Hotel">
@@ -413,7 +413,7 @@ enjoying your morning coffee.</span>
 
 ## Information about Rooms
 
-Some hotels just indicate basic information about the number and type of available room categories. In the simplest form, one can use the [numberOfRooms](../numberOfRooms) property with the type of room in the [unitText](../unitText) property of a [QuantitativeValue](/QuantitativeValue), like so:
+Some hotels just indicate basic information about the number and type of available room categories. In the simplest form, one can use the [numberOfRooms](https://schema.org/numberOfRooms) property with the type of room in the [unitText](https://schema.org/unitText) property of a [QuantitativeValue](https://schema.org/QuantitativeValue), like so:
 
 ```
 <div itemscope itemtype="https://schema.org/Hotel">
@@ -437,7 +437,7 @@ In many cases, however, hotel Web sites contain additional information like imag
 
 ### Basic Pattern: Description and Picture
 
-You can link the hotel to its rooms (or suites or guest appartments) via the [containsPlace](../containsPlace) property or a room to the hotel it belongs to via the inverse [containedInPlace](../containedInPlace).
+You can link the hotel to its rooms (or suites or guest appartments) via the [containsPlace](https://schema.org/containsPlace) property or a room to the hotel it belongs to via the inverse [containedInPlace](https://schema.org/containedInPlace).
 
 ```
 <div itemscope itemtype="https://schema.org/Hotel">
@@ -463,7 +463,7 @@ enjoying your morning coffee.</span>
 
 ### Beds and Occupancy
 
-You can add more details to the [hotel room](../HotelRoom) entities, like the type and number of beds and the occupancy. The occupancy can be a single value (using [value](../value)) or a range (using [minValue](../minValue) and [minValue](../minValue)).
+You can add more details to the [hotel room](https://schema.org/HotelRoom) entities, like the type and number of beds and the occupancy. The occupancy can be a single value (using [value](https://schema.org/value)) or a range (using [minValue](https://schema.org/minValue) and [minValue](https://schema.org/minValue)).
 
 ```
 <div itemscope itemtype="https://schema.org/Hotel">
@@ -488,7 +488,7 @@ enjoying your morning coffee.</span>
 
 ### Features and Services
 
-Room features, like "mini-bar", "wifi" or "air conditioning" can be expressed using the [amenityFeature](/amenityFeature) property and an [LocationFeatureSpecification](/LocationFeatureSpecification) entity, which is a special form of a [property-value](../PropertyValue). The [amenityFeature](../amenityFeature) property does not make a statement on whether the room feature is free or for an additional charge.
+Room features, like "mini-bar", "wifi" or "air conditioning" can be expressed using the [amenityFeature](https://schema.org/amenityFeature) property and an [LocationFeatureSpecification](https://schema.org/LocationFeatureSpecification) entity, which is a special form of a [property-value](https://schema.org/PropertyValue). The [amenityFeature](https://schema.org/amenityFeature) property does not make a statement on whether the room feature is free or for an additional charge.
 
 #### Room Features
 
@@ -512,11 +512,11 @@ Room features, like "mini-bar", "wifi" or "air conditioning" can be expressed us
 </div>
 ```
 
-**Note:** For modeling the fees of optional room features, you can link the [offer](../Offer) for the room to an offer for the feature or service via the [addOn](../addOn) property.
+**Note:** For modeling the fees of optional room features, you can link the [offer](https://schema.org/Offer) for the room to an offer for the feature or service via the [addOn](https://schema.org/addOn) property.
 
 ## Offers and Pricing
 
-A key principle in schema.org is that things do not have prices, but that offers to grant you some rights on the things do have instead. Thus, all commercial aspects of a hotel offer belong to the [offer](../Offer) type in schema.org. In the following, we show the use of relevant schema.org elements. Note the use of MTEs, asignining the accomodation instance to also be a [https://schema.org/Product](../Product).
+A key principle in schema.org is that things do not have prices, but that offers to grant you some rights on the things do have instead. Thus, all commercial aspects of a hotel offer belong to the [offer](https://schema.org/Offer) type in schema.org. In the following, we show the use of relevant schema.org elements. Note the use of MTEs, asignining the accomodation instance to also be a [https://schema.org/Product](https://schema.org/Product).
 
 ### Basic Pattern
 
@@ -565,7 +565,7 @@ You can indicate room prices per room or per person by choosing the appropriate 
 
 ### Price Ranges
 
-You can use the [minPrice](../minPrice) and [maxPrice](../maxPrice) properties to indicate price ranges for rooms.
+You can use the [minPrice](https://schema.org/minPrice) and [maxPrice](https://schema.org/maxPrice) properties to indicate price ranges for rooms.
 
 **Example:** Single rooms cost between $ 99 and $ 179 per night.
 
@@ -689,7 +689,7 @@ You can constrain the validity of a price by time in one of the following ways:
 
 ### Compound Prices
 
-For some types of accommodations, the price has multiple components, e.g. a weekly fee and a flat cleaning and service fee for a vacation home. The [CompoundPriceSpecification](../CompoundPriceSpecification) type serves this purpose.
+For some types of accommodations, the price has multiple components, e.g. a weekly fee and a flat cleaning and service fee for a vacation home. The [CompoundPriceSpecification](https://schema.org/CompoundPriceSpecification) type serves this purpose.
 
 **Example:** 400 USD per week plus a cleaning fee of 100 USD per stay
 
@@ -720,7 +720,7 @@ For some types of accommodations, the price has multiple components, e.g. a week
 
 ### Occupancy
 
-The occupancy for a given room rate can be indicated via [occupancy](../occupancy) (total occupancy). For details (e.g. number of adults vs. number of children), you can use the [name](../name) property of the [value](../QuantitativeValue).
+The occupancy for a given room rate can be indicated via [occupancy](https://schema.org/occupancy) (total occupancy). For details (e.g. number of adults vs. number of children), you can use the [name](https://schema.org/name) property of the [value](https://schema.org/QuantitativeValue).
 
 **Example:** USD 249 per night for a suite with up to two adults and two children
 
@@ -776,15 +776,15 @@ The occupancy for a given room rate can be indicated via [occupancy](../occupanc
 
 ### Cancellation Rules and Terms and Conditions
 
-Cancellation policy information and other details of the terms and conditions should be put into the [description](../description) property of the [offer](../Offer).
+Cancellation policy information and other details of the terms and conditions should be put into the [description](https://schema.org/description) property of the [offer](https://schema.org/Offer).
 
 ### Fees for Optional Services
 
-Price information for optional services should be put into an additional [offer](../Offer) and linked to from the base offer via the [addOn](../addOn) property.
+Price information for optional services should be put into an additional [offer](https://schema.org/Offer) and linked to from the base offer via the [addOn](https://schema.org/addOn) property.
 
 ## Meals and Food Services
 
-Information about meals can be attached to the [offer](../Offer) by creating a product bundle with multiple [TypeAndQuantityNode](../TypeAndQuantityNode) elements and [FoodService](../FoodService).
+Information about meals can be attached to the [offer](https://schema.org/Offer) by creating a product bundle with multiple [TypeAndQuantityNode](https://schema.org/TypeAndQuantityNode) elements and [FoodService](https://schema.org/FoodService).
 
 **Example:** Room with breakfast included
 

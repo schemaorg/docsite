@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Data Commons Docs"
-description: Data Commons Documentation
-url: "https://docs.datacommons.org"
-github_username:  datacommonsorg
+title: "Schema.org Docs"
+description: Schema.org Documentation
+url: "https://docs.schema.org"
+github_username:  schemaorg
 
 # Build settings
 markdown: kramdown

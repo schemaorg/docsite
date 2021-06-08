@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Schema Info
-nav_order: 3
+nav_order: 2
 has_children: true
 ---
 

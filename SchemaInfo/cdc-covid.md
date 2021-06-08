@@ -39,11 +39,11 @@ The purpose of this schema definition is to provide a standards-based representa
 
 The following additions were made to Schema.org (in the Pending area, pending review and implementation feedback):
 
-*   1 new type: Thing > Intangible > StructuredValue > [CDCPMDRecord](/CDCPMDRecord)
-*   14 new properties: [cvdCollectionDate](/cvdCollectionDate), [cvdNumBeds](/cvdNumBeds), [cvdNumTotBeds](/cvdNumTotBeds), [cvdNumBedsOcc](/cvdNumBedsOcc), [cvdNumICUBeds](/cvdNumICUBeds), [cvdNumICUBedsOcc](/cvdNumICUBedsOcc), [cvdNumVent](/cvdNumVent), [cvdNumVentUse](/cvdNumVentUse), [cvdNumC19HospPats](/cvdNumC19HospPats), [cvdNumC19MechVentPats](/cvdNumC19MechVentPats), [cvdNumC19HOPats](/cvdNumC19HOPats), [cvdNumC19OverflowPats](/cvdNumC19OverflowPats), [cvdNumC19OFMechVentPats](/cvdNumC19OFMechVentPats), [cvdNumC19Died](/cvdNumC19Died).
-*   In addition, a new [healthcareReportingData](/healthcareReportingData) property can be used to relate a [Hospital](/Hospital) to a [CDCPMDRecord](/CDCPMDRecord).
-*   The [datePosted](/datePosted) property can also be used on a [CDCPMDRecord](/CDCPMDRecord).
-*   **Use [cvdFacilityId](/cvdFacilityId) to identify the NHSN facility, and (optionally)[cvdFacilityCounty](/cvdFacilityCounty) for its county name.**
+*   1 new type: Thing > Intangible > StructuredValue > [CDCPMDRecord](https://schema.org/CDCPMDRecord)
+*   14 new properties: [cvdCollectionDate](https://schema.org/cvdCollectionDate), [cvdNumBeds](https://schema.org/cvdNumBeds), [cvdNumTotBeds](https://schema.org/cvdNumTotBeds), [cvdNumBedsOcc](https://schema.org/cvdNumBedsOcc), [cvdNumICUBeds](https://schema.org/cvdNumICUBeds), [cvdNumICUBedsOcc](https://schema.org/cvdNumICUBedsOcc), [cvdNumVent](https://schema.org/cvdNumVent), [cvdNumVentUse](https://schema.org/cvdNumVentUse), [cvdNumC19HospPats](https://schema.org/cvdNumC19HospPats), [cvdNumC19MechVentPats](https://schema.org/cvdNumC19MechVentPats), [cvdNumC19HOPats](https://schema.org/cvdNumC19HOPats), [cvdNumC19OverflowPats](https://schema.org/cvdNumC19OverflowPats), [cvdNumC19OFMechVentPats](https://schema.org/cvdNumC19OFMechVentPats), [cvdNumC19Died](https://schema.org/cvdNumC19Died).
+*   In addition, a new [healthcareReportingData](https://schema.org/healthcareReportingData) property can be used to relate a [Hospital](https://schema.org/Hospital) to a [CDCPMDRecord](https://schema.org/CDCPMDRecord).
+*   The [datePosted](https://schema.org/datePosted) property can also be used on a [CDCPMDRecord](https://schema.org/CDCPMDRecord).
+*   **Use [cvdFacilityId](https://schema.org/cvdFacilityId) to identify the NHSN facility, and (optionally)[cvdFacilityCounty](https://schema.org/cvdFacilityCounty) for its county name.**
 
 New properties: this adds several new properties (see "Schema.org name" column). Most are Number (with additional application-level constraints summarized in "Notes" column).
 

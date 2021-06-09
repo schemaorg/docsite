@@ -94,7 +94,7 @@ Schema.org is a work in progress which will keep evolving over the next many yea
 
 Q: <a name="6" id="6"></a>*Who is managing schema.org on an ongoing basis? Can other websites join schema.org as partners and help decide what new schemas to support?*
 
-The day to day operations of Schema.org, including decisions regarding the schema, are handled by a steering group, which includes representatives of the founding companies and other experts. See the [about schema.org](about.html) page for more details on how to get involved.
+The day to day operations of Schema.org, including decisions regarding the schema, are handled by a steering group, which includes representatives of the founding companies and other experts. See the [about schema.org](/about.html) page for more details on how to get involved.
 
 Q: <a name="7" id="7"></a>*Is schema.org available in multiple languages? When is that coming? What languages is the markup available in?*
 

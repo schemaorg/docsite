@@ -7,7 +7,7 @@ nav_order: 7
 
 # Schema.org Extensions
 
-Over the years, we have experimented with a couple of different extension mechanisms (see [2011-2014](/docs/old_extension.html) and [2014-2018](/docs/old_extension_2015.html) docs for details).
+Over the years, we have experimented with a couple of different extension mechanisms (see [2011-2014](/Extensions/old_extension.html) and [2014-2018](/Extensions/old_extension_2015.html) docs for details).
 
 The primary motivation behind these models was to enable decentralized extension of the vocabulary. However, we have come to realize that for adoption, we need a simpler model, where publishers can be sure that a piece of vocabulary is indeed part of Schema.org. Until April 2019, we relied primarily on the '[hosted extensions](/docs/old_extension_2015.html)' mechanism that used hosted subdomains of schema.org (such as bib.schema.org for the bibliography extension and autos.schema.org for the autos extension). Going forward, the content of these hosted extensions are being folded into schema.org, although each will retain an "entry point" page as before.
 

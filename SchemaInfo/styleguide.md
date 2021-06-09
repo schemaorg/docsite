@@ -19,7 +19,7 @@ There are three kinds of schema.org term in the schema.org [data model](datamode
 ## Type
 
 *   TitleCase for case format (all words capitalized, all one string).
-    *   E.g. [FoodEstablishment](/FoodEstablishment).
+    *   E.g. [FoodEstablishment](https://schema.org/FoodEstablishment).
 *   Types have associated properties.
     *   E.g. [FoodEstablishment](https://schema.org/FoodEstablishment) has the property [servesCuisine](https://schema.org/servesCuisine).
     *   There is a technical terminology, "_domain_" and "_range_" which is used during design discussions and in machine-readable files, but which is not intended for widespread use. For example, we say the _domain_ of "alumni" includes EducationalOrganization, and its _range_ includes "Person".
@@ -65,7 +65,7 @@ _Some additional notes on schema.org definitions._
 *   Schema.org types have a specific semantic meaning above what the word itself _could_ mean; consuming applications can't just use a type because the name fits.
     *   E.g. [Physician](https://schema.org/Physician) as a type means a physician office, not a person who is a physician.
     *   Avoid using the word "type" unless refering to the technical notion of a type or class.
-    *   Existing schema.org types and properties should be reused whenever the semantics needed already exist. The project will often adjust definitions (wording or type/property associations) to facilitate this; see the [releases](releases.html) page for examples.
+    *   Existing schema.org types and properties should be reused whenever the semantics needed already exist. The project will often adjust definitions (wording or type/property associations) to facilitate this; see the [releases](https://schema.org/docs/releases.html) page for examples.
     *   Schema.org uses open world philosophy: the omission of a claim should not be taken to imply negation: if a property isn't mentioned, this doesn't mean that it is false. Rather, it means that we don't know whether it's true or false.
     *   E.g. restaurant, [petsAllowed](https://schema.org/petsAllowed) is a boolean property (T/F) of [LodgingBusiness](https://schema.org/LodgingBusiness), but if [petsAllowed](https://schema.org/petsAllowed) is not set, then it is unknown whether pets are allowed.
 

@@ -22,9 +22,9 @@ Like many other systems, the schema presented here can be extended (with a few t
 
 The canonical machine representation of schema.org is in RDFa:
 
-*   [schema_org_rdfa.html](schema_org_rdfa.html)
+*   [schema_org_rdfa.html](https://schema.org/docs/schema_org_rdfa.html)
 
-Now-obsolete snapshots of [Microdata](https://web.archive.org/web/20150414142113/https://schema.org/docs/full_md.html) and [OWL](schemaorg.owl) experimental data dumps were previously published. See also [TopQuadrant's version](http://datashapes.org/schema).
+Now-obsolete snapshots of [Microdata](https://web.archive.org/web/20150414142113/https://schema.org/docs/full_md.html) and [OWL](https://schema.org/docs/schemaorg.owl) experimental data dumps were previously published. See also [TopQuadrant's version](http://datashapes.org/schema).
 
 See the "[developers](https://schema.org/docs/developers.html)" page for more information on machine-readable views of schema.org.
 

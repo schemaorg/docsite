@@ -14,7 +14,7 @@ Select the file and format required and click Download. The CSV format downloads
 
 File _schemaorg-current-https_ contains the definition of all terms in, all sections of, the vocabulary. The file _schemaorg-all-https_ contains the definition of all terms in, all sections of, the vocabulary, **plus** terms retired from the vocabulary (_See the [attic section](https://schema.org/docs/attic.home.html) for details_).
 
-For those preferring to use http based definitions of Schema.org terms, these equivalent definitions are available in the _schemaorg-current-http_ and _schemaorg-all-http_ files. For more information on using https or http based terms see the [FAQ](/SchmaInfo/faq.html#19) for details.
+For those preferring to use http based definitions of Schema.org terms, these equivalent definitions are available in the _schemaorg-current-http_ and _schemaorg-all-http_ files. For more information on using https or http based terms see the [FAQ](/SchemaInfo/faq.html#19) for details.
 
 <table style="padding: 2px; width:600px">
 <tbody>

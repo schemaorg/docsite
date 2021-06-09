@@ -13,7 +13,7 @@ The primary motivation behind these models was to enable decentralized extension
 
 Terms from these hosted extensions are now considered fully part of schema.org, although they remain tagged with a label corresponding to the extension it originated from. Over a period of time, as usage of these terms gets intermingled with other terms, these labels may be dropped or simplified.
 
-One label --- '[pending](/docs/extension.html)' --- is kept reserved for enabling us to more rapidly introduce terms into schema.org, on an experimental basis. After a period of time of being in a pending status, depending on usage, adoption, discussions etc. a term will be incorporated into the core or get dropped.
+One label --- '[pending](https://schema.org/docs/pending.home.html)' --- is kept reserved for enabling us to more rapidly introduce terms into schema.org, on an experimental basis. After a period of time of being in a pending status, depending on usage, adoption, discussions etc. a term will be incorporated into the core or get dropped.
 
 External extensions, where a third party might want to host a broadly applicable extension themselves (e.g., [http://gs1.org/voc](http://gs1.org/voc)) will continue as before.
 

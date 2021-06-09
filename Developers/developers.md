@@ -15,7 +15,7 @@ Machine-readable definitions of individual terms are available as JSON-LD, embed
 
 ## Vocabulary Definition Files
 
-To assist developers, files containing the definition of the current version of the Schema.org vocabulary are [available for download](/developers/download.html) in common RDF formats.
+To assist developers, files containing the definition of the current version of the Schema.org vocabulary are [available for download](/Developers/download.html) in common RDF formats.
 
 
 ## Experimental/Unsupported
@@ -24,7 +24,7 @@ The following representations are _experimental_ and may change or be removed in
 
 ### D3 RDFS in JSON-LD
 
-A simplification of the Schema.org type hierarchy, in which each type has at most one super-type, represented in a hybrid format that combines JSON-LD, [RDFS](https://en.wikipedia.org/wiki/RDF_Schema) and [D3](https://d3js.org/): [tree.jsonld](/docs/tree.jsonld).
+A simplification of the Schema.org type hierarchy, in which each type has at most one super-type, represented in a hybrid format that combines JSON-LD, [RDFS](https://en.wikipedia.org/wiki/RDF_Schema) and [D3](https://d3js.org/): [tree.jsonld](https://schema.org/docs/tree.jsonld).
 
 This file is made available to support developers using the [D3](https://d3js.org/) JavaScript library for manipulating documents based on data. It uses JSON-LD to declare that D3's default "children" JSON field represents "subClassOf" relationships, but expressed in the reverse direction ([example usage](https://bl.ocks.org/danbri/1c121ea8bd2189cf411c)).
 

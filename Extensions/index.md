@@ -13,3 +13,4 @@ Information about specifically focused areas of the vocabulary:
 *   **[Autos](/Extensions/automotive.html):** background information on marking up automobiles.
 *   **[Banks and Financial Institutions](/Extensions/financial.html):** Background information and examples on the types and properties for marking up banks and their products e.g. [[MortgageLoan]] and [[ExchangeRateSpecification]].
 
+

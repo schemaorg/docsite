@@ -60,9 +60,12 @@ function insertsdolink(node, text, insertpos){
 function appendHref(node,token,ref){
     var link = token;
     if (ref  != null){
+        if ( ref.startsWith('/') ){
+            ref = ref.substring(1);
+        }
         link = ref;
     }
-    var href=targ + "/" + link;
+    var href= targ + "/" + link;
     var a = document.createElement('a');
     a.href = href;
     a.title = token;

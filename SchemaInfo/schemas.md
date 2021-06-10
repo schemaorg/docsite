@@ -30,7 +30,7 @@ Or you can jump directly to a commonly used type:
 
 See also the [[releases]]{docs/releases.html} page for recent updates and project history.  
 
-We also have a small set of [[primitive data types]]{DataType} for numbers, text, etc. More details about the data model, etc. are available [here](/SchemaInfodatamodel.html).  
+We also have a small set of [[primitive data types]]{DataType} for numbers, text, etc. More details about the data model, etc. are available [here](/SchemaInfo/datamodel.html).  
 
 Developer information / Download Machine Readable files (RDF, JSON-LD, etc):
 

@@ -138,7 +138,7 @@ In creating schema.org, one of our goals was to create a single place where webm
 
 Q: <a name="16" id="16"></a>*Where can I give feedback, report bugs, etc.?*
 
-Please use our [feedback](feedback.html) form.
+Please use our [[feedback]]{docs/feedback.html} form.
 
 Q: <a name="17" id="17"></a>*Where did you get that great domain name?*
 

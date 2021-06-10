@@ -5,7 +5,7 @@ parent: Schema.org for Developers
 nav_order: 1
 ---
 
-## Schema.org for Developers
+# Schema.org for Developers
 
 This is a placeholder page for developer-oriented information about schema.org. In particular it gives access to machine-readable representations of our schemas.
 

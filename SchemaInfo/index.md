@@ -11,8 +11,8 @@ has_children: true
 *   **[Frequently asked questions](/SchemaInfo/faq.html)**
 *   **[Data model](/SchemaInfo/datamodel.html):** a brief note on the data model used, etc.
 *   **[Style Guide](/SchemaInfo/styleguide.html):** naming conventions and related patterns for schema authoring.
-*   **[Developers](/Developers):** developer-oriented information about schema.org
-*   **[Vocabulary definition download](/Developers/download.html:** download definition files for core vocabulary and extensions.
+*   **[Developers](/Developers/developers.html):** developer-oriented information about schema.org
+*   **[Vocabulary definition download](/Developers/download.html):** download definition files for core vocabulary and extensions.
 *   **[Extension Mechanism](/SchemaInfo/extension.html):** The extension mechanism that can be used to extend the schemas.
 *   **[Schema.org COVID-19 response: US CDC Data Table fields](/SchemaInfo/cdc-covid.html)**
 *   **[Overview of dataset-related vocabulary.](/SchemaInfo/data-and-datasets.html)**

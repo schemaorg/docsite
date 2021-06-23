@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: "Schema.org Docs"
 description: Schema.org Documentation
-url: "https://docs.schema.org"
+url: "https://docsite.schema.org"
 github_username:  schemaorg
 
 # Build settings

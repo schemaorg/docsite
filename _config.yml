@@ -20,6 +20,7 @@ github_username:  schemaorg
 
 # Build settings
 markdown: kramdown
+baseurl: /docsite
 plugins:
   - jekyll-feed
   - jekyll-redirect-from

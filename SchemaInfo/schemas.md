@@ -8,7 +8,7 @@ nav_order: 1
 # Organization of Schemas
 
 The schemas are a set of 'types', each associated with a set of properties. The types are arranged in a hierarchy.  
-The vocabulary currently consists of 779 Types, 1390 Properties 15 Datatypes, 81 Enumerations and 437 Enumeration members.  
+Version 13.0 of the Schema.org vocabulary currently consists of 2782 terms: 792 Types, 1447 Properties 15 Datatypes, 83 Enumerations and 445 Enumeration members.  
 
 Browse the full hierarchy in HTML:
 

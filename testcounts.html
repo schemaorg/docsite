@@ -1,0 +1,32 @@
+<html>
+
+<head>
+
+</head>
+<body>
+    <h1>TEST</h1>
+The schemas are a set of 'types', each associated with a set of properties. The types are arranged in a hierarchy.<br/>
+Version <span class="schemacount schemaorgversion">XX</span> of the Schema.org vocabulary currently consists of <span class="schemacount All">XX</span> terms:
+ <span class="schemacount Type">XX</span> Types, 
+ <span class="schemacount Property">XX</span> Properties,
+ <span class="schemacount Datatype">XX</span> Datatypes, 
+ <span class="schemacount Enumeration">XX</span> Enumerations and 
+ <span class="schemacount Enumerationvalue">XX</span> Enumeration members.<br/>
+
+<!-- Call-back function to be called from following jsonp script from live Schema.org site (jsonpcounts.js) -->
+    <script type="text/javascript">
+        function insertschemacounts(jsoncounts){
+            var counts = JSON.parse(jsoncounts);
+            for (var key in counts) {
+                var classes = "schemacount " + key;
+                var x = document.getElementsByClassName(classes);
+                for (var i = 0; i < x.length; i++) {
+                    x[i].textContent = counts[key];
+                }
+            }
+        }
+    </script>
+<!-- Live script from Schema.org site to return current counts and call our insertschemacounts() funtion to insert them -->
+    <script type="text/javascript" src="file:///Users/wallisr/Development/Schema/main/schemaorg/software/site/docs/jsonpcounts.js"></script>
+</body>
+</html>
